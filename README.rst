@@ -2,68 +2,71 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
-===============
+================
 renocopro.theme
-===============
-Preview
+================
+
+Tell me what your product does
+
+Features
+--------
+
+- Can be bullet points
+
+
+Examples
+--------
+
+This add-on can be seen in action at the following sites:
+- Is there a page on the internet where everybody can see the features?
+
+
+Documentation
+-------------
+
+Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+
+
+Translations
+------------
+
+This product has been translated into
+
+- Klingon (thanks, K'Plai)
+
+
+Installation
+------------
+
+Install renocopro.theme by adding it to your buildout::
+
+    [buildout]
+
+    ...
+
+    eggs =
+        renocopro.theme
+
+
+and then running ``bin/buildout``
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/collective/renocopro.theme/issues
+- Source Code: https://github.com/collective/renocopro.theme
+- Documentation: https://docs.plone.org/foo/bar
+
+
+Support
 -------
 
-.. image:: ./src/renocopro/theme/theme/images/thumb.png
-   :alt: Classic Theme
-   :target: http://www.affinitic.be
+If you are having issues, please let us know.
+We have a mailing list located at: project@example.com
 
 
-Installation du package
------------------------
-
-Développer le buildout et ses dépendances.
-
-```sh
-$ make build
-```
-
-ou
-
-```sh
-$ virtualenv-2.7 .
-$ bin/pip install -I -r requirements.txt
-$ ln -s dev.cfg buildout.cfg
-$ bin/buildout
-```
-
-Lancer l'instance
-
-```sh
-$ bin/instance fg
-```
-
-
-Installer le package
---------------------
-
-  - Aller sur http://localhost:8080/
-  - Créer un nouveau site plone
-  - [Aller dans le control panel section "Modules"](http://localhost:8080/Plone/prefs_install_products_form)
-  - Installer "renocopro.theme"
-
-Ajouter le contenu d'exemple
-----------------------------
-
-  - [Aller dans le control panel section "Modules"](http://localhost:8080/Plone/prefs_install_products_form)
-  - Ajouter "affinitic.demo.content" dans les dépendances et l'installer
-
-
-Le theme Classic est installé!
-==============================
-
-
-Credits
+License
 -------
-
-This package was developed by `Affinitic team <https://github.com/affinitic>`_.
-
-.. image:: ./src/renocopro/theme/theme/images/affinitic.jpg
-   :alt: Affinitic website
-   :target: http://www.affinitic.be
 
 The project is licensed under the GPLv2.
