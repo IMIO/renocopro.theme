@@ -126,3 +126,5 @@ venv.bak/
 
 tmp/
 buildout.cfg
+
+/node_modules/

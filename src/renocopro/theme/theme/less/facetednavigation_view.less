@@ -1,0 +1,62 @@
+body.template-facetednavigation_view{
+	.faceted-form{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 4rem;
+		#center-and-left-area{
+			grid-column: 1;
+			grid-row: 1;
+		}
+		#top-area{
+			grid-column: 2;
+			grid-row: 1;
+		}
+		.faceted-clear,
+		.faceted-sections-buttons,
+		#right-area,
+		#bottom-area{
+			display: none;
+		}
+	}
+	.eea-preview-items{
+		border: 1px solid @color-medium;
+		padding: 1rem;
+		.faceted-casestudies{
+		        border-bottom: 1px dashed @color-medium;
+			padding: 2rem 0;
+			a{
+				&:hover,
+				&:active,
+				&:focus{
+					text-decoration: none;
+				}
+				.items-content{
+					display: flex;
+				}
+				.image{
+					border: 1px solid @color-medium;
+					padding: 0.5rem;
+					img{
+						max-width: 20rem;
+						max-height: 20rem;
+					}
+				}
+				.text{
+					padding-left: 2rem;
+					h4{
+						margin-top: 0;
+					}
+					span{
+						color: #666;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	#faceted-top-column{
+		background-color: @color-medium;
+		padding: 1rem;
+	}
+}
