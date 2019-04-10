@@ -58,5 +58,21 @@ body.template-facetednavigation_view{
 	#faceted-top-column{
 		background-color: @color-medium;
 		padding: 1rem;
+		fieldset{
+			border: none;
+			legend{
+				margin: 0;
+				border: none;
+				font-size: 1.6rem;
+			}
+			select{
+				width: 100%
+			}
+			input[type="submit"]{
+				background-color: #007bb1;
+				color: @color-light;
+				text-shadow: none;
+			}
+		}
 	}
 }
