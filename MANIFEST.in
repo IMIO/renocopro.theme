@@ -9,3 +9,5 @@ exclude requirements.txt
 exclude Gruntfile.js
 exclude Makefile
 exclude package.json
+exclude package-lock.json
+exclude pip-selfcheck.json
