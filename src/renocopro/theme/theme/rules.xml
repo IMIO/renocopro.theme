@@ -32,9 +32,24 @@
   <copy attributes="*" css:content="body" css:theme="body" />
 
   <!-- move global nav -->
-  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
+  <replace css:theme-children="#mainnavigation > ul" css:content-children="#portal-globalnav" />
 
   <!-- full-width breadcrumb -->
+  <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" />
+  <replace css:content="#plone-lock-status" css:theme="#plone-lock-status" />
+  <replace css:theme-children="#portal-banner">
+    <xsl:apply-templates css:select="#portal-banner > *" />
+    <div id="sponsor">
+      <a href="">
+        <img class="interreg" src="++theme++renocopro.theme/images/interreg.jpg" />
+      </a>
+      <a href="">
+        <img class="rw" src="++theme++renocopro.theme/images/rw.jpg" />
+      </a>
+    </div>
+  </replace>
+  <replace css:content="#portal-anontools" css:theme="#portal-anontools" />
+
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
 
   <!-- Central column -->
@@ -89,14 +104,20 @@
     </replace>
   </rules>
 
-  <!-- Content header -->
-  <replace css:theme="#portal-top" css:content-children="#portal-top" />
+  <!-- Content logo -->
+  <replace css:theme="#portal-logo" css:content="#portal-logo" />
+
+  <!-- Content anonymous-actions -->
+  <replace css:theme="#anonymous-actions" css:content-children="#anonymous-actions" />
 
   <!-- Footer -->
-  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+  <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper div[id^='portletwrapper']" />
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
 
+    <!-- Search -->
+  <replace css:theme="#searchbox-content" css:content="#portal-searchbox > *"></replace>
+  <drop css:content="#portal-searchbox"/>
 </rules>

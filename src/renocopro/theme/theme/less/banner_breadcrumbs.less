@@ -1,0 +1,83 @@
+#portal-breadcrumbs{
+	clear: both;
+	background-color: transparent;
+	margin: 1.5em 0 0.5em 0;
+	ol > li + li{
+		&:before{
+			display: none;
+		}
+		&:after {
+			content: "\f054";
+			position: absolute;
+			padding: 0 5px;
+			color: @color-default;
+			left: -21px;
+			top: 0;
+			padding: 0 !important;
+			font-weight: 900;
+			font-family: "Font Awesome 5 Free";
+			border: none;
+		}
+	}
+	a{
+		color: @color-dark;
+		text-decoration: underline;
+	}
+}
+#portal-banner{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+	.container{
+		width: 100%;
+		padding: 0;
+		.banner_container{
+			position: relative;
+			.bannerImage{
+				width: 100%;
+				padding-bottom: 30%;
+				min-height: 20rem;
+				overflow: hidden;
+				img{
+					position: absolute;
+					min-width: 100%;
+					min-height: 100%;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			.bannerText{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background-color: @color-default2;
+				padding: 1rem;
+				text-align: center;
+				font-weight: 900;
+				p{
+					font-size: 1.4rem;
+					margin: 0;
+				}
+			}
+		}
+	}
+	#sponsor{
+		height: 10rem;
+		right: 0;
+		display: block;
+		position: absolute;
+		top: 40%;
+		transform: translateY(-50%);
+		background-color: @color-light;
+		a{
+			height: 100%;
+			display: inline-block;
+		}
+		img{
+			height: 100%;
+			width: auto;
+		}
+	}
+}

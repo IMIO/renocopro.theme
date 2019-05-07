@@ -18,6 +18,12 @@
       />
 
   <plone:static
+      directory="theme/js"
+      type="plone"
+      name="renocopro.theme.js"
+      />
+
+  <plone:static
       directory="theme/less"
       type="plone"
       name="renocopro.theme.less"

@@ -18,27 +18,40 @@
           href="barceloneta-apple-touch-icon-precomposed.png" />
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
     <section id="portal-toolbar">
     </section>
     <div class="outer-wrapper">
       <header id="content-header" role="banner">
-        <div class="container">
-          <header id="portal-top">
-          </header>
-          <div id="anonymous-actions">
+        <div id="portal-logo">
+        </div>
+        <div id="mainnavigation-wrapper">
+          <input id="display_menu_button" name="display_menu_button" type="checkbox">
+          <label id="display_menu_label" for="display_menu_button">Menu de navigation</label>
+          <div id="mainnavigation">
+            <ul>
+            </ul>
           </div>
         </div>
+        <div id="search-wrapper">
+          <div id="hidden-search" class="portal-search-hidden">
+            <div id="searchbox">
+              <div id="searchbox-content">
+              </div>
+            </div>
+          </div>
+          <div id="btn-search">
+            <a href="#"  class="btn-search"></a>
+          </div>
+        </div>
+        <div id="anonymous-actions"></div>
+        <div id="portal-anontools"></div>
       </header>
-      <div id="mainnavigation-wrapper">
-        <div id="mainnavigation">
-        </div>
-      </div>
-      <div id="above-content-wrapper">
-          <div id="above-content">
-          </div>
-      </div>
+      <div id="portal-banner"></div>
+      <div id="portal-breadcrumbs"></div>
+      <div id="plone-lock-status"></div>
       <div class="container">
         <div class="row">
           <aside id="global_statusmessage"></aside>
@@ -54,7 +67,6 @@
       </div><!--/container-->
     </div> <!--/outer-wrapper -->
     <footer id="portal-footer-wrapper" role="contentinfo">
-      <div class="container" id="portal-footer"></div>
     </footer>
   </body>
 </html>

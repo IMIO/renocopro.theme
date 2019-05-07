@@ -1,0 +1,124 @@
+#content-header{
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	#portal-logo {
+		display: inline-block;
+		box-shadow: 1px 4px 7px #bcbcbc;
+		height: 15rem;
+		width: 15rem;
+		position: absolute;
+		margin: 0 0 0 4rem;
+		background: @color-light;
+		text-align: center;
+		z-index: 1;
+		img {
+			display: inline-block;
+			max-width: 100%;
+			max-height: 100%;
+			margin-top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	#mainnavigation-wrapper{
+		flex: 1;
+		padding-left: 22rem;
+		#display_menu_button,
+		#display_menu_label{
+			display: none;
+		}
+		#mainnavigation{
+			height: 100%;
+			ul{
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				li{
+					display: inline-block;
+					padding: 1rem;
+				}
+			}
+		}
+	}
+	#search-wrapper{
+		#hidden-search{
+			height: 100%;
+			#searchbox{
+				height: 100%;
+				#searchGadget_form{
+					height: 100%;
+					.LSBox{
+						display: flex;
+						height: 100%;
+						align-items: center;
+						margin-right: 1rem;
+						#searchGadget{
+							height: auto;
+							padding: 0.2rem;
+							opacity: 0;
+						}
+						.livesearch-results{
+							opacity: 0;
+						}
+						.searchSection{
+							display: none;
+						}
+						.searchButton{
+							color: transparent;
+							background-color: transparent;
+							width: 3rem;
+							padding: 0;
+							height: 100%;
+							z-index: 2;
+							text-shadow: none;
+							box-shadow: none;
+						}
+						&::after{
+							color: @color-light;
+							content: "\f002";
+							font-weight: 900;
+							font-family: "Font Awesome 5 Free";
+							z-index: 1;
+							margin-left: -2rem;
+						}
+					}
+					&:hover,
+					&:focus,
+					&:active{
+						#searchGadget,
+						.livesearch-results{
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+	#portal-anontools{
+		padding: 0;
+		margin: 0;
+		ul{
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			li{
+				height: 100%;
+				margin: 0;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+	a{
+		color: @color-light;
+		margin: 1.5rem;
+		&:hover,
+		&:focus,
+		&:active{
+			color: @color-default;
+			text-decoration: none;
+		}
+	}
+}

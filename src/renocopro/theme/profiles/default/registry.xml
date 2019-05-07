@@ -25,11 +25,28 @@
 	    </value>
 	</record>
 
+    <records prefix="plone.resources/plonetheme.flexslider"
+        interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="js">++plone++renocopro.theme.js/jquery.flexslider.js</value>
+    </records>
+    <records prefix="plone.bundles/plonetheme.flexslider"
+        interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources">
+            <element>plonetheme.flexslider</element>
+        </value>
+        <value key="merge_with">default</value>
+        <value key="enabled">True</value>
+        <value key="compile">True</value>
+        <value key="jscompilation">++plone++renocopro.theme.js/jquery.flexslider.js</value>
+        <value key="last_compilation">2018-07-13 00:00:00</value>
+    </records>
+
     <records prefix="plone.resources/plonetheme.custom"
         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
         <value key="css">
             <element>++plone++renocopro.theme.less/custom.less</element>
         </value>
+        <value key="js">++plone++renocopro.theme.js/renocopro.js</value>
     </records>
     <records prefix="plone.bundles/plonetheme.custom"
         interface='Products.CMFPlone.interfaces.IBundleRegistry'>
@@ -40,6 +57,7 @@
         <value key="enabled">True</value>
         <value key="compile">True</value>
         <value key="csscompilation">++plone++renocopro.theme.less/theme-compiled.css</value>
+        <value key="jscompilation">++plone++renocopro.theme.js/renocopro.js</value>
         <value key="last_compilation">2018-07-13 00:00:00</value>
     </records>
 </registry>
