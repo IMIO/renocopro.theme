@@ -1,0 +1,24 @@
+.mosaic-grid-row:nth-child(even){
+	background-color: @color-medium;
+	width: auto !important;
+	margin: 4rem -1.5rem !important;
+	.mosaic-width-full{
+		margin: 3rem auto;
+		float: none;
+	}
+	@media (min-width: 768px) {
+		.mosaic-width-full{
+			width: 750px;
+		}
+	}
+	@media (min-width: 992px) {
+		.mosaic-width-full{
+			width: 970px;
+		}
+	}
+	@media (min-width: 1200px) {
+		.mosaic-width-full{
+			width: 1170px;
+		}
+	}
+}

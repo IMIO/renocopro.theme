@@ -22,7 +22,7 @@
 	}
 	#mainnavigation-wrapper{
 		flex: 1;
-		padding-left: 22rem;
+		padding-left: 20rem;
 		#display_menu_button,
 		#display_menu_label{
 			display: none;
@@ -35,9 +35,9 @@
 				height: 100%;
 				display: flex;
 				align-items: center;
+				justify-content: space-between;
 				li{
 					display: inline-block;
-					padding: 1rem;
 				}
 			}
 		}
@@ -120,5 +120,74 @@
 			color: @color-default;
 			text-decoration: none;
 		}
+	}
+}
+@media (max-width: 1200px) {
+	#content-header{
+		display: block;
+		#portal-logo{
+			height: 10rem;
+			width: 10rem;
+			margin: 0;
+		}
+		#mainnavigation-wrapper{
+			padding-left: 10rem;
+			font-size: 2rem;
+			#display_menu_label{
+				padding-right: 1rem;
+				display: flex;
+				color: transparent;
+				font-size: 3rem;
+				justify-content: end;
+				margin: 0;
+				&::after{
+					color: @color-light;
+					cursor: pointer;
+					content: "\f0c9";
+					font-weight: 900;
+					font-family: "Font Awesome 5 Free";
+				}
+			}
+			#mainnavigation{
+				display: none;
+			}
+			#display_menu_label.checked + #mainnavigation{
+				display: block;
+				ul{
+					width: 100%;
+					display: block;
+					padding-bottom: 0.5rem;
+					li{
+						padding: 0.5rem 1rem;
+						width: 100%;
+						text-align: center;
+						a{
+							width: 100%;
+							display: inline-block;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+		#search-wrapper{
+			padding: 0 0 0 11rem;
+			position: absolute;
+			right: 5rem;
+			top: 0.5rem;
+			font-size: 2.2rem;
+		}
+	}
+	#edit-zone a.plone-toolbar-logo{
+		bottom: 0;
+	}
+	body #portal-banner #sponsor {
+		height: 5rem;
+		position: relative;
+		text-align: right;
+		margin-bottom: -5rem;
+	}
+	body #portal-banner .container .banner_container .bannerText{
+		display: none;
 	}
 }

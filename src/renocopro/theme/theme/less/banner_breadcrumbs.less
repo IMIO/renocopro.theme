@@ -34,6 +34,14 @@
 		padding: 0;
 		.banner_container{
 			position: relative;
+			&.banner_without_image{
+				width: 100%;
+				padding-bottom: 30%;
+				background-image: url(++theme++renocopro.theme/images/liege.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 			.bannerImage{
 				width: 100%;
 				padding-bottom: 30%;
@@ -50,15 +58,31 @@
 			}
 			.bannerText{
 				position: absolute;
-				bottom: 0;
-				width: 100%;
-				background-color: @color-default2;
-				padding: 1rem;
 				text-align: center;
 				font-weight: 900;
+				transform: translate(-50%, -50%);
+				left: 40%;
+				top: 50%;
+				width: auto;
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				.bannerTitle,
+				.bannerDescription,
+				.bannerBody{
+					padding: 1rem;
+					background-color: rgba(0, 0, 0, 0.5);
+					color: @color-light !important;
+					margin: 0 0 1rem 0;
+				}
+				.bannerTitle{
+					font-size: 3rem;
+					font-weight: 900;
+				}
+				.bannerDescription,
+				.bannerBody,
 				p{
-					font-size: 1.4rem;
-					margin: 0;
+					font-size: 1.5rem;
 				}
 			}
 		}
