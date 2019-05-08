@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.interfaces import INonInstallable
+from collective.behavior.banner.banner import IBanner
 from plone import api
+from plone.app.imagecropping.behaviors import IImageCroppingBehavior
+from plone.dexterity.interfaces import IDexterityFTI
+from plone.namedfile.file import NamedBlobImage
+from zope.component import queryUtility
 from zope.interface import implementer
+import os
 
 
 @implementer(INonInstallable)
@@ -26,9 +32,24 @@ def post_install(context):
     }
     lessvars.update(lessvars_new)
     api.portal.set_registry_record('plone.lessvariables', lessvars)
-
+    add_behavior('Folder', IBanner.__identifier__)
+    add_behavior('Document', IBanner.__identifier__)
+    add_behavior('Folder', IImageCroppingBehavior.__identifier__)
+    add_behavior('Document', IImageCroppingBehavior.__identifier__)
 
 
 def uninstall(context):
     """Uninstall script"""
     # Do something at the end of the uninstallation of this package.
+    #
+
+
+def add_behavior(type_name, behavior_name):
+    """Add a behavior to a type"""
+    fti = queryUtility(IDexterityFTI, name=type_name)
+    if not fti:
+        return
+    behaviors = list(fti.behaviors)
+    if behavior_name not in behaviors:
+        behaviors.append(behavior_name)
+        fti._updateProperty('behaviors', tuple(behaviors))
