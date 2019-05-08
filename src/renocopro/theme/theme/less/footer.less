@@ -73,6 +73,15 @@ footer#portal-footer-wrapper{
 		background-color: transparent;
 		border: none;
 		font-size: 1.4rem;
+		&::before{
+			display: none;
+		}
+		&:active,
+		&:hover,
+		&:focus{
+			color: @color-default;
+			text-decoration: none;
+		}
 	}
 	header,
 	h4{
