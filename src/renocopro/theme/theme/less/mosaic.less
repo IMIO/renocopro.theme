@@ -1,32 +1,58 @@
-.mosaic-grid-row:nth-child(even){
-	&::after{
-		background-color: @color-medium;
-		width: 100vw;
-		display: block;
-		position: absolute;
-		top: 0;
-		z-index: -1;
-		height: 100%;
-		left: -20.3rem;
-	}
-	margin: 4rem -1.5rem !important;
-	.mosaic-width-full{
-		margin: 3rem auto;
-		float: none;
+.mosaic-grid-row{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	&:nth-child(even){
+		&::after{
+			background-color: rgba(232, 232, 232, 0.5);
+			width: 100vw;
+			display: block;
+			position: absolute;
+			top: 1.5rem;
+			z-index: -1;
+			height: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.mosaic-width-full{
+			margin: 3rem auto;
+			float: none;
+		}
 	}
 	@media (min-width: 768px) {
-		.mosaic-width-full{
 			width: 750px;
-		}
+			&:nth-child(even){
+				&::after{
+				}
+			}
 	}
 	@media (min-width: 992px) {
-		.mosaic-width-full{
 			width: 970px;
-		}
 	}
 	@media (min-width: 1200px) {
-		.mosaic-width-full{
 			width: 1170px;
+	}
+}
+body.mosaic-grid > .outer-wrapper{
+	overflow-x: hidden;
+	& > .container{
+		width: auto;
+		padding: 0;
+		@media (min-width: 768px) {
+			width: 750px;
+		}
+		@media (min-width: 992px) {
+			width: 970px;
+		}
+		@media (min-width: 1200px) {
+			width: 1170px;
+		}
+		.row{
+			margin: 0 !important;
+		}
+		.col-sm-12 {
+			padding: 0 !important;
+			width: 100%;
 		}
 	}
 }
