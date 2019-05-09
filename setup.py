@@ -44,6 +44,7 @@ setup(
         'z3c.jbot',
         'plone.app.theming',
         'plone.app.themingplugins',
+        'collective.behavior.banner',
     ],
     extras_require={
         'test': [
