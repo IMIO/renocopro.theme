@@ -5,7 +5,11 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add banner to install
+  [amariscal]
+
+- Fix package dependencies
+  [mpeeters]
 
 
 1.0a3 (2019-05-09)
