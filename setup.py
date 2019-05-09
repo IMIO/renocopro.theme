@@ -45,6 +45,7 @@ setup(
         'plone.app.theming',
         'plone.app.themingplugins',
         'collective.behavior.banner',
+        'plone.app.imagecropping',
     ],
     extras_require={
         'test': [
