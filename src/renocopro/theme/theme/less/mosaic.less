@@ -1,6 +1,14 @@
 .mosaic-grid-row:nth-child(even){
-	background-color: @color-medium;
-	width: auto !important;
+	&::after{
+		background-color: @color-medium;
+		width: 100vw;
+		display: block;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		height: 100%;
+		left: -20.3rem;
+	}
 	margin: 4rem -1.5rem !important;
 	.mosaic-width-full{
 		margin: 3rem auto;

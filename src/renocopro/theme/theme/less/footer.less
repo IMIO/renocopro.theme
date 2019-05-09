@@ -79,8 +79,12 @@ footer#portal-footer-wrapper{
 		&:active,
 		&:hover,
 		&:focus{
-			color: @color-default;
-			text-decoration: none;
+			color: @color-light;
+			text-decoration: underline;
+		}
+		&.state-private{
+			text-decoration: @color-light wavy underline;
+			color: @color-light !important;
 		}
 	}
 	header,

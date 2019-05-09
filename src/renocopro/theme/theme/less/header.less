@@ -35,7 +35,7 @@
 				height: 100%;
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
+				justify-content: start;
 				li{
 					display: inline-block;
 				}
@@ -92,6 +92,18 @@
 							opacity: 1;
 						}
 					}
+					.livesearch-results{
+						h4{
+							margin: 0;
+						}
+						a{
+							color: @color-dark;
+							margin: 0;
+						}
+						p:empty{
+							display: none;
+						}
+					}
 				}
 			}
 		}
@@ -113,7 +125,7 @@
 	}
 	a{
 		color: @color-light;
-		margin: 1.5rem;
+		margin: 1.5rem 3rem;
 		&:hover,
 		&:focus,
 		&:active{
