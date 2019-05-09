@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add banner to install and add style
+  [amariscal]
 
 
 1.0a4 (2019-05-09)
