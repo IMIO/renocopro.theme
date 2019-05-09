@@ -5,7 +5,11 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add image.cropping and add behaviors banner
+  [amariscal]
+
+- Adapt style
+  [amariscal]
 
 
 1.0a2 (2019-04-19)
