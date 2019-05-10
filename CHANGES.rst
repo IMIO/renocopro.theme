@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a6 (unreleased)
+1.0a6 (2019-05-10)
 ------------------
 
 - Change style and add logo to footer
