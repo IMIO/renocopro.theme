@@ -5,7 +5,8 @@ Changelog
 1.0a7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Temporary adaptation for homepage
+  [amariscal]
 
 
 1.0a6 (2019-05-10)
