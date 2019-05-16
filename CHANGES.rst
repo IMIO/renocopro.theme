@@ -5,6 +5,9 @@ Changelog
 1.0a7 (unreleased)
 ------------------
 
+- Add script to footer
+  [amariscal]
+
 - Temporary adaptation for homepage
   [amariscal]
 

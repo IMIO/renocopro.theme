@@ -111,7 +111,10 @@
   <replace css:theme="#anonymous-actions" css:content-children="#anonymous-actions" />
 
   <!-- Footer -->
-  <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper div[id^='portletwrapper']" />
+  <replace css:theme-children="#portal-footer-wrapper">
+      <xsl:copy-of css:select="#portal-footer-wrapper div[id^='portletwrapper'] > *" />
+      <xsl:copy-of css:select="#portal-footer-wrapper script" />
+  </replace>
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
