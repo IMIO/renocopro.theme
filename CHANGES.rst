@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a7 (unreleased)
+1.0a7 (2019-05-17)
 ------------------
 
 - Add script to footer
