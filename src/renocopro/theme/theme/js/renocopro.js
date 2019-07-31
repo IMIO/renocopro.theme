@@ -55,4 +55,73 @@ $(document).ready(function() {
       });
     }
   /* ----  CASES STUDIES TILE END ---- */
+
+  /* ----  CASES STUDIES TEMPLATE START ---- */
+  $("#case-studies-tabs").each(function(){
+    var sections = $(this).find('#tabs-content section');
+    var id = window.location.hash;
+    var ids = []
+    $(sections).map(function(index){
+      $(this).attr('name', 'tab_' + index);
+      title = $(this).children('h2').text();
+      li = document.createElement("li");
+      li.innerHTML = title;
+      li.id = 'tab_' + index;
+      if (index == 0){
+        $(this).addClass('current');
+        li.className = 'current';
+      }
+      $('#tabs-buttons').append(li);
+      ids.push("#tab_" + index);
+    });
+
+    var id = window.location.hash;
+    if (id != '' && ids.includes(id)){
+      $(id).addClass("current");
+      $("li[id^='tab_']").removeClass("current");
+      $("section[name^='tab_']").removeClass("current");
+      $(id).addClass("current");
+      $('[name="' + id.substring(1) + '"]').addClass("current");
+    }else{
+      $('#tab_0').addClass("current");
+      $('[name="tab_0"]').addClass("current");
+    }
+
+    $("li[id^='tab_']").click(function() {
+      $("li[id^='tab_']").removeClass("current");
+      $("section[name^='tab_']").removeClass("current");
+      $(this).addClass("current");
+      var id = $(this).attr("id");
+      history.pushState(null, null, "#" + id);
+      $("[name='" + id + "']").addClass("current");
+    });
+
+    var button = document.getElementById('next');
+    button.onclick = function () {
+      var container = document.getElementById('tabs-buttons');
+      sideScroll(container,'right',25,100,10);
+    };
+
+    var back = document.getElementById('prev');
+    back.onclick = function () {
+      var container = document.getElementById('tabs-buttons');
+      sideScroll(container,'left',25,100,10);
+    };
+
+    function sideScroll(element,direction,speed,distance,step){
+      scrollAmount = 0;
+      var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+          element.scrollLeft -= step;
+        } else {
+          element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+          window.clearInterval(slideTimer);
+        }
+      }, speed);
+    }
+  });
+  /* ----  CASES STUDIES TEMPLATE END ---- */
 });

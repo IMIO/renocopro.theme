@@ -5,6 +5,9 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
+- Add style to case studies for add tabs
+  [amariscal]
+
 - Change size of immage banner
   [amariscal]
 

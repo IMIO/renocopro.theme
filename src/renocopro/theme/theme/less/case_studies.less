@@ -1,0 +1,74 @@
+.portaltype-case_studies{
+	#case-studies-tabs{
+		margin-top: 5rem;
+	}
+	.tabs-buttons-content{
+		display: flex;
+		margin-bottom: -0.1rem;
+		.arrow{
+			background: @color-light;
+			border: none;
+			text-shadow: none;
+			border: 1px solid @color-default;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			&:hover,
+			&:active{
+				box-shadow: none;
+				background: @color-default;
+				&::before{
+					color: @color-light;
+				}
+			}
+			&::before{
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				color: @color-default;
+			}
+		}
+		#prev{
+			margin-right: 0.5rem;
+			&::before{
+				content: "\f053";
+			}
+		}
+		#next{
+			margin-left: 0.5rem;
+			&::before{
+				content: "\f054";
+			}
+		}
+		#tabs-buttons{
+			display: flex;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			align-items: stretch;
+			overflow: hidden;
+			li{
+				border: 1px solid @color-default;
+				padding: 0.5rem;
+				margin-left: 0.5rem;
+				white-space: nowrap;
+				cursor: pointer;
+				&.current{
+					color: @color-light;
+					background: @color-default;
+				}
+			}
+		}
+	}
+	#tabs-content{
+		border: 1px solid @color-default;
+		padding: 2rem;
+		section:not(.current){
+			opacity: 0;
+			width: 0;
+			height: 0;
+			overflow: hidden;
+		}
+		h2{
+			color: @color-default;
+		}
+	}
+}
