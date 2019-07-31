@@ -5,7 +5,8 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change size of immage banner
+  [amariscal]
 
 
 1.0a7 (2019-05-17)

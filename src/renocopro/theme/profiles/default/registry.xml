@@ -58,6 +58,6 @@
         <value key="compile">True</value>
         <value key="csscompilation">++plone++renocopro.theme.less/theme-compiled.css</value>
         <value key="jscompilation">++plone++renocopro.theme.js/renocopro.js</value>
-        <value key="last_compilation">2018-07-13 00:00:00</value>
+        <value key="last_compilation">2019-07-31 00:00:00</value>
     </records>
 </registry>

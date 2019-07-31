@@ -35,26 +35,22 @@
 		padding: 0;
 		.banner_container{
 			position: relative;
+			height: 100%;
+			display: block;
+			width: 100%;
+			padding-bottom: 30%;
 			&.banner_without_image{
-				width: 100%;
-				padding-bottom: 30%;
 				background-image: url(++theme++renocopro.theme/images/liege.jpg);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
 			.bannerImage{
-				width: 100%;
-				padding-bottom: 30%;
-				min-height: 20rem;
-				overflow: hidden;
 				img{
 					position: absolute;
 					min-width: 100%;
 					min-height: 100%;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+					object-fit: cover;
 				}
 			}
 			.bannerText{
