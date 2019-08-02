@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a8 (unreleased)
+1.0a8 (2019-08-02)
 ------------------
 
 - Add style to case studies for add tabs
