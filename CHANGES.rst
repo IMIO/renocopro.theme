@@ -5,7 +5,8 @@ Changelog
 1.0a9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove image on sitemap in footer
+  [amariscal]
 
 
 1.0a8 (2019-08-02)
