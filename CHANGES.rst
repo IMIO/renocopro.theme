@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a9 (unreleased)
+1.0a9 (2019-09-16)
 ------------------
 
 - Remove image on sitemap in footer
