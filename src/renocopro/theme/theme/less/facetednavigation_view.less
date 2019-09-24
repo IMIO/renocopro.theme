@@ -1,17 +1,7 @@
 body.template-facetednavigation_view{
 	.faceted-form{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		grid-gap: 4rem;
-		#center-and-left-area{
-			grid-column: 1;
-			grid-row: 1;
-		}
-		#top-area{
-			grid-column: 2;
-			grid-row: 1;
-		}
+		display: flex;
+		flex-direction: column;
 		.faceted-clear,
 		.faceted-sections-buttons,
 		#right-area,
@@ -22,9 +12,14 @@ body.template-facetednavigation_view{
 	.eea-preview-items{
 		border: 1px solid @color-medium;
 		padding: 1rem;
-		.faceted-casestudies{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.faceted-casestudies,
+		.faceted-professional{
 		        border-bottom: 1px dashed @color-medium;
 			padding: 2rem 0;
+			width: 49%;
 			a{
 				&:hover,
 				&:active,
@@ -47,9 +42,16 @@ body.template-facetednavigation_view{
 					h4{
 						margin-top: 0;
 					}
-					span{
+					span,
+					.description{
 						color: #666;
 						display: block;
+					}
+					.status{
+						margin-bottom: 0.5rem;
+					}
+					ul{
+						padding-left: 1.5rem;
 					}
 				}
 			}
@@ -58,6 +60,10 @@ body.template-facetednavigation_view{
 	#faceted-top-column{
 		background-color: @color-medium;
 		padding: 1rem;
+		.faceted-default-widgets{
+			    display: flex;
+			    flex-wrap: wrap;
+		}
 		fieldset{
 			border: none;
 			legend{
@@ -72,6 +78,12 @@ body.template-facetednavigation_view{
 				background-color: @color-default;
 				color: @color-light;
 				text-shadow: none;
+			}
+			form{
+				display: flex;
+				.searchButton{
+					margin-left: 0.5rem;
+				}
 			}
 		}
 	}

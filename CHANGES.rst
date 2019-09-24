@@ -5,6 +5,9 @@ Changelog
 1.0a10 (unreleased)
 -------------------
 
+- Add style to professionals faceted
+  [amariscal]
+
 - Fix case studies display
   [vpiret]
 
