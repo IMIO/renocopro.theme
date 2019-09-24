@@ -63,7 +63,7 @@ $(document).ready(function() {
     var ids = []
     $(sections).map(function(index){
       $(this).attr('name', 'tab_' + index);
-      title = $(this).children('h2').text();
+      title = $(this).children('h2.tab').text();
       li = document.createElement("li");
       li.innerHTML = title;
       li.id = 'tab_' + index;
