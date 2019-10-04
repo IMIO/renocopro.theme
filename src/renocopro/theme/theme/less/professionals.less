@@ -1,0 +1,51 @@
+.section-professionals{
+	#content{
+		.label{
+			padding: 0 0.5rem 0 0;
+			font-size: 1.4rem;
+			white-space: normal;
+		}
+		.row{
+			padding-bottom: 2rem;
+		}
+		.col-md-3{
+			border: 1px solid @color-default;
+			padding: 3rem;
+			ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		.gallery-photo{
+			.images-preview{
+				margin-left: 0;
+			}
+		}
+	}
+	.fancybox-container .fullcaption,
+	.fancybox-thumbs{
+		display: flex;
+		flex-direction: column;
+		width: 370px;
+		padding: 0 2rem;
+		.caption{
+			overflow-y: auto;
+			height: auto;
+			flex: 1;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h3{
+			color: @color-default;
+		}
+		label{
+			padding: 1rem 0.5rem 0 0;
+			font-size: 1.4rem;
+			white-space: normal;
+		}
+	}
+	[id^="fancybox-container-"] .fancybox-inner,
+	.fancybox-show-thumbs .fancybox-inner{
+		right: 370px;
+	}
+}
