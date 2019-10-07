@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a10 (unreleased)
+1.0a10 (2019-10-07)
 -------------------
 
 - Add style to professionals faceted
