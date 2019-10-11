@@ -5,7 +5,8 @@ Changelog
 1.0a11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix class for style to professionals faceted
+  [amariscal]
 
 
 1.0a10 (2019-10-07)
