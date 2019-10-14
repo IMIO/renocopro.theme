@@ -5,7 +5,8 @@ Changelog
 1.0a12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add style for slider in case studies and professionnals
+  [amariscal]
 
 
 1.0a11 (2019-10-11)

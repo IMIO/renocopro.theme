@@ -28,7 +28,33 @@ $(document).ready(function() {
     $window.resize(function() {
         resize();
     });
+
+    function resize() {
+      $('.flexslider-tile, .gallery-photo').each(function(){
+        var limit = $(this).attr('data-slider');
+        var gridSize = getGridSize(limit);
+
+        $(this).children('.flexslider').data('flexslider').vars.minItems = gridSize;
+        $(this).children('.flexslider').data('flexslider').vars.maxItems = gridSize;
+      });
+    }
   /* ----  SLIDER TILE GLOBAL END ---- */
+
+  /* ----  CASES STUDIES GALLERY START ---- */
+  $('.gallery-photo').each(function(){
+    var limit = $(this).attr('data-slider');
+    $(this).children('.flexslider-slider').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      controlNav: false,
+      slideshow: false,
+      itemWidth: 210,
+      itemMargin: 10,
+      minItems: getGridSize(limit),
+      maxItems: getGridSize(limit),
+    });
+  });
+  /* ----  CASES STUDIES GALLERY END ---- */
 
   /* ----  CASES STUDIES TILE START ---- */
     $('.flexslider-tile').each(function(){
@@ -44,16 +70,6 @@ $(document).ready(function() {
         maxItems: getGridSize(limit),
       });
     });
-
-    function resize() {
-      $('.flexslider-tile').each(function(){
-        var limit = $(this).attr('data-slider');
-        var gridSize = getGridSize(limit);
-
-        $(this).children('.flexslider').data('flexslider').vars.minItems = gridSize;
-        $(this).children('.flexslider').data('flexslider').vars.maxItems = gridSize;
-      });
-    }
   /* ----  CASES STUDIES TILE END ---- */
 
   /* ----  CASES STUDIES TEMPLATE START ---- */
