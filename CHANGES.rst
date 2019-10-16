@@ -5,6 +5,9 @@ Changelog
 1.0a12 (unreleased)
 -------------------
 
+- Adapt template professionnal view RENOCOPRO-37
+  [amariscal]
+
 - Adapt style for slider RENOCOPRO-42
   [amariscal]
 

@@ -111,3 +111,14 @@ footer#portal-footer-wrapper{
 		margin: 0;
 	}
 }
+@media (max-width: 768px) {
+	footer#portal-footer-wrapper{
+		display: flex;
+		flex-direction: column;
+		& > div,
+		& > aside{
+			text-align: center !important;
+			padding: 2rem !important;
+		}
+	}
+}
