@@ -73,6 +73,7 @@
 		}
 	}
 }
+.slider-multiple,
 .flexslider-tile{
 	ul.slides{
 		display: flex;
@@ -148,6 +149,28 @@
 					content: "\f105";
 				}
 			}
+		}
+	}
+}
+.slider-multiple ul.slides li{
+	display: flex !important;
+	flex-direction: column;
+	a{
+		height: auto;
+	}
+	.flex-caption{
+		padding: 0 1rem;
+		.title{
+			color: @color-dark;
+		}
+	}
+	.read-next-line{
+		padding: 1rem;
+		margin-top: auto;
+		text-align: right;
+		a{
+			color: @color-dark;
+			opacity: 0.7;
 		}
 	}
 }

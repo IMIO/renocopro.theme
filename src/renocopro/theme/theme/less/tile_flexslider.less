@@ -1,39 +1,37 @@
 [class$="folder_collection-tile"]{
-	.flexslider-tile{
-		ul.slides{
-			li{
-				.flex-caption{
-					height: 100%;
-					.content{
-						grid-row: 2;
-						grid-column: 1;
-						padding: 0.5rem 1rem;
-						font-family: 'Abel', sans-serif;
-						.title{
-							font-size: 2rem;
-							color: #000000;
-							font-family: Abel;
-							padding: 1rem 0;
-						}
-						.documentByLine{
-							color: @color-default;
-						}
-						.description{
-							margin-bottom: 1rem;
-						}
+	ul.slides{
+		li{
+			.flex-caption{
+				height: 100%;
+				.content{
+					grid-row: 2;
+					grid-column: 1;
+					padding: 0.5rem 1rem;
+					font-family: 'Abel', sans-serif;
+					.title{
+						font-size: 2rem;
+						color: #000000;
+						font-family: Abel;
+						padding: 1rem 0;
+					}
+					.documentByLine{
+						color: @color-default;
+					}
+					.description{
+						margin-bottom: 1rem;
 					}
 				}
-				.image-background {
-					width: 100%;
-					padding-top: 66%;
-				}
-				.image-background + .flex-caption{
-					grid-template-rows: 1fr 1fr;
-					grid-template-columns: auto;
-					.content{
-						grid-row: 2;
-						grid-column: 1;
-					}
+			}
+			.image-background {
+				width: 100%;
+				padding-top: 66%;
+			}
+			.image-background + .flex-caption{
+				grid-template-rows: 1fr 1fr;
+				grid-template-columns: auto;
+				.content{
+					grid-row: 2;
+					grid-column: 1;
 				}
 			}
 		}
