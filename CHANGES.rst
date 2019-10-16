@@ -5,6 +5,9 @@ Changelog
 1.0a12 (unreleased)
 -------------------
 
+- Adapt style for slider RENOCOPRO-42
+  [amariscal]
+
 - Add style for slider in case studies and professionnals
   [amariscal]
 

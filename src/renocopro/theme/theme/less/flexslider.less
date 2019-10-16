@@ -73,3 +73,81 @@
 		}
 	}
 }
+.flexslider-tile{
+	ul.slides{
+		display: flex;
+		align-items: stretch;
+		padding: 0;
+		li{
+			background: #FFF;
+			min-height: 100%;
+			border: 1px solid #e6e6e6;
+			a{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				&:hover,
+				&:active,
+				&:focus{
+					text-decoration: none;
+				}
+			}
+			.image-background {
+				width: 100%;
+				padding-top: 66%;
+			}
+		}
+	}
+	.flex-direction-nav {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		margin: 0;
+		padding: 0;
+		li{
+			background: #000000 !important;
+			margin-top: 1em;
+			margin-bottom: 0.25em;
+			line-height: 1.5em;
+			display: list-item;
+			width: 60px;
+			height: 60px;
+			margin-right: 0;
+			overflow: hidden;
+			a{
+				position: relative;
+				color: #000;
+				height: 100%;
+				width: 100%;
+				display: block;
+				opacity: 0.5;
+				&:hover,
+				&:active,
+				&:focus{
+					opacity: 1;
+				}
+				&::before {
+					font-family: "Font Awesome 5 Free";
+					font-weight: 900;
+					color: #FFF;
+					font-size: 28px;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				&:not(.flex-disabled):hover{
+					opacity: 1;
+				}
+				&.flex-prev::before{
+					content: "\f104";
+				}
+				&.flex-next::before{
+					content: "\f105";
+				}
+			}
+		}
+	}
+}
