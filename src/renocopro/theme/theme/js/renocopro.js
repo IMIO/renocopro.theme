@@ -34,13 +34,28 @@ $(document).ready(function() {
         var limit = $(this).attr('data-slider');
         var gridSize = getGridSize(limit);
 
-        $(this).children('.flexslider').data('flexslider').vars.minItems = gridSize;
-        $(this).children('.flexslider').data('flexslider').vars.maxItems = gridSize;
+        $(this).children('.flexslider').each(function(){
+          $(this).data('flexslider').vars.minItems = gridSize;
+          $(this).data('flexslider').vars.maxItems = gridSize;
+        });
       });
     }
   /* ----  SLIDER TILE GLOBAL END ---- */
 
   /* ----  FLEXSLIDER START ---- */
+  $('.banner-slider').each(function(){
+    var limit = $(this).attr('data-slider');
+    $(this).children('.flexslider-slider').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      controlNav: false,
+      slideshow: false,
+      itemWidth: 210,
+      itemMargin: 0,
+      minItems: getGridSize(limit),
+      maxItems: getGridSize(limit),
+    });
+  });
   $('.gallery-photo, .flexslider-tile').each(function(){
     var limit = $(this).attr('data-slider');
     $(this).children('.flexslider-slider').flexslider({

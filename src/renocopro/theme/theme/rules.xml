@@ -39,6 +39,13 @@
   <replace css:content="#plone-lock-status" css:theme="#plone-lock-status" />
   <replace css:theme-children="#portal-banner">
     <xsl:apply-templates css:select="#portal-banner > *" />
+    <div class="banner-slider" data-slider="1">
+      <div class="flexslider-slider">
+        <ul class="slides">
+          <xsl:apply-templates css:select="#portal-slider ul > *" />
+        </ul>
+      </div>
+    </div>
     <div id="sponsor">
       <a href="">
         <img class="interreg" src="++theme++renocopro.theme/images/interreg.jpg" />
