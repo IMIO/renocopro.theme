@@ -11,15 +11,78 @@ body.template-facetednavigation_view{
 	}
 	.eea-preview-items{
 		border: 1px solid @color-medium;
-		padding: 1rem;
+		padding: 1rem 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		flex-direction: row-reverse;
+		.button-map-content{
+			width: 100%;
+			text-align: right;
+			.button-map{
+				display: inline-flex;
+				align-items: center;
+				border: none;
+				background: none;
+				text-shadow: none;
+				padding: 0;
+				margin-left: auto;
+				&:hover,
+				&:active,
+				&:focus{
+					box-shadow: none;
+				}
+				&::after{
+					content: "\f205";
+					font-weight: 900;
+					font-family: "Font Awesome 5 Free";
+					font-size: 2rem;
+					padding-left: 0.5rem;
+				}
+				&.hide-map{
+					&::after{
+						color: @color-default;
+						transform: rotate(180deg);
+						padding-right: 0.5rem;
+						padding-left: 0;
+					}
+				}
+				&.display-map{
+					&::after{
+						transform: rotateZ(180deg);
+					}
+				}
+			}
+		}
+		#faceted-map{
+			width: 52% !important;
+			display: inline-block !important;
+		}
+		#faceted-results{
+			width: 48%;
+			display: inline-block;
+			margin-right: auto;
+			.faceted-casestudies,
+			.faceted-professional{
+				width: 100%;
+			}
+		}
+		#faceted-map.hidden{
+			display: none !important;
+			& ~ #faceted-results{
+				width: 100%;
+				.faceted-casestudies,
+				.faceted-professional{
+					width: 49%;
+				}
+			}
+		}
 		.faceted-casestudies,
 		.faceted-professional{
 		        border-bottom: 1px dashed @color-medium;
 			padding: 2rem 0;
 			width: 49%;
+			display: inline-block;
 			a{
 				&:hover,
 				&:active,
@@ -31,7 +94,7 @@ body.template-facetednavigation_view{
 				}
 				.image{
 					border: 1px solid @color-medium;
-					padding: 0.5rem;
+					padding: 0 0 0.5rem 0;
 					img{
 						max-width: 20rem;
 						max-height: 20rem;

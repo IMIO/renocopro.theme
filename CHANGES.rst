@@ -5,6 +5,9 @@ Changelog
 1.0a12 (unreleased)
 -------------------
 
+- Adapt style for map in faceted RENOCOPRO-39
+  [amariscal]
+
 - Adapt template professionnal view RENOCOPRO-37
   [amariscal]
 
