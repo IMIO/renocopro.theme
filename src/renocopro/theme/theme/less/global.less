@@ -52,3 +52,21 @@
 		}
 	}
 }
+a.bouton{
+	padding: 0.2rem 0.75rem;
+	background: @color-default;
+	color: @color-light;
+	font-size: 1.8rem;
+	font-weight: bold;
+	&:hover,
+	&:active,
+	&:focus{
+		background: @color-dark;
+		text-decoration: none;
+	}
+}
+.glyphicon.link-mailto,
+.glyphicon.link-https,
+.glyphicon.link-external{
+	display: none;
+}

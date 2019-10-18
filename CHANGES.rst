@@ -5,6 +5,9 @@ Changelog
 1.0a12 (unreleased)
 -------------------
 
+- Add style on link and hide glyphicon RENOCOPRO-35
+  [amariscal]
+
 - Adapt style for responsive RENOCOPRO-43
   [amariscal]
 
