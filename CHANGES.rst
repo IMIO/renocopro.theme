@@ -5,7 +5,8 @@ Changelog
 1.0a13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Adapt style for slider RENOCOPRO-42
+  [amariscal]
 
 
 1.0a12 (2019-10-18)
