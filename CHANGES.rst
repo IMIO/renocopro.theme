@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a12 (unreleased)
+1.0a12 (2019-10-18)
 -------------------
 
 - Add style on link and hide glyphicon RENOCOPRO-35
