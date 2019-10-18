@@ -5,6 +5,9 @@ Changelog
 1.0a13 (unreleased)
 -------------------
 
+- Add style for event view RENOCOPRO-42
+  [amariscal]
+
 - Adapt style for slider RENOCOPRO-42
   [amariscal]
 
