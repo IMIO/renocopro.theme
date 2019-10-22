@@ -5,6 +5,9 @@ Changelog
 1.0a13 (unreleased)
 -------------------
 
+- Adapt slider RENOCOPRO-47
+  [amariscal]
+
 - Adapt style for professionnals RENOCOPRO-48
   [amariscal]
 

@@ -47,9 +47,9 @@ $(document).ready(function() {
     var limit = $(this).attr('data-slider');
     $(this).children('.flexslider-slider').flexslider({
       animation: "slide",
-      animationLoop: false,
-      controlNav: false,
-      slideshow: false,
+      animationLoop: true,
+      controlNav: true,
+      slideshow: true,
       itemWidth: 210,
       itemMargin: 0,
       minItems: getGridSize(limit),
