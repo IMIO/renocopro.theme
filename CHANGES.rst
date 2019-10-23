@@ -5,6 +5,9 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
+- Fix height of title in case studies tile
+  [amariscal]
+
 - Remove tempory less
   [amariscal]
 
