@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a14 (unreleased)
+1.0a14 (2019-10-23)
 -------------------
 
 - Fix height of title in case studies tile
