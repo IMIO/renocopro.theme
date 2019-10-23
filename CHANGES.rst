@@ -5,7 +5,8 @@ Changelog
 1.0a14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Remove tempory less
+  [amariscal]
 
 
 1.0a13 (2019-10-22)
