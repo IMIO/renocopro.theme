@@ -5,7 +5,8 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add iframe class for ifame RENOCOPRO-55
+  [amariscal]
 
 
 1.0a14 (2019-10-23)
