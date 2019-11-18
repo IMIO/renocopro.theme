@@ -5,6 +5,12 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Adapt fancybox RENOCOPRO-48
+  [amariscal]
+
+- Hide profesionnal text RENOCOPRO-53
+  [amariscal]
+
 - Fix case studies slider RENOCOPRO-65
   [amariscal]
 
