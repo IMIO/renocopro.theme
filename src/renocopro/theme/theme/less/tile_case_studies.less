@@ -3,12 +3,11 @@
 		ul.slides{
 			li{
 				.flex-caption{
-					height: 100%;
-					display: grid;
-					grid-template-rows: auto;
-					grid-template-columns: auto;
+					display: flex;
+    				flex-direction: column;
+					flex: 1;
 					.block{
-						max-height: 5rem;
+						height: 4.9rem;
 						width: 100%;
 						background-color: @color-default;
 						display: block;
@@ -35,14 +34,6 @@
 							font-size: 1.4rem;
 							text-align: right;
 						}
-					}
-				}
-				.image-background + .flex-caption{
-					grid-template-rows: 1fr 1fr;
-					grid-template-columns: auto;
-					.content{
-						grid-row: 2;
-						grid-column: 1;
 					}
 				}
 			}

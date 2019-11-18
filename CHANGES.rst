@@ -5,6 +5,9 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Fix case studies slider RENOCOPRO-65
+  [amariscal]
+
 - Hide navTreeItem in footer RENOCOPRO-61
   [amariscal]
 
