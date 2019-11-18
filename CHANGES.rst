@@ -5,6 +5,9 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Hide navTreeItem in footer RENOCOPRO-61
+  [amariscal]
+
 - Add iframe class for ifame RENOCOPRO-55
   [amariscal]
 
