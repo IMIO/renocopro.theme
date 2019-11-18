@@ -5,6 +5,9 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Adapt style of faceted view RENOCOPRO-47
+  [amariscal]
+
 - Adapt style of professionnel view RENOCOPRO-49
   [amariscal]
 
