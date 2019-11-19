@@ -242,15 +242,39 @@ body.template-facetednavigation_view {
 @media (max-width: 992px) {
 	body.template-facetednavigation_view {
 		.eea-preview-items {
+			padding: 0;
 
 			#faceted-results,
 			.faceted-casestudies {
 				width: 100%;
 			}
 
+			.photoAlbumEntry{
+				width: 100%;
+				& > a{
+					width: 100%;
+					padding: 1rem;
+					.photoAlbumEntryDescription{
+						margin: 1rem;
+					}
+				}
+			}
+
 			.button-map-content,
 			#faceted-map {
-				display: none !important;
+				position: relative !important;
+				width: 100% !important;
+				height: auto !important;
+				top: 0vh !important;
+			}
+			.faceted-casestudies a .items-content,
+			.faceted-professional a .items-content {
+				.image{
+					text-align: center;
+					img{
+						max-width: none;
+					}
+				}
 			}
 		}
 	}

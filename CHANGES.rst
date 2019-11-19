@@ -5,6 +5,9 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Fix responsive RENOCOPRO-55
+  [AuroreMariscal]
+
 - Fix slider for safari RENOCOPRO-46
   [AuroreMariscal]
 

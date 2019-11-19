@@ -1,81 +1,145 @@
-.portaltype-professional{
-	.label{
-		padding: 0 0.5rem 0 0;
-		font-size: 1.4rem;
+.portaltype-professional {
+	.label {
+		padding    : 0 0.5rem 0 0;
+		font-size  : 1.4rem;
 		white-space: normal;
 	}
-	.row{
+
+	.row {
 		padding-bottom: 2rem;
 	}
-	.col-md-6 > ul{
+
+	.col-md-6>ul {
 		padding: 0;
 	}
-	.col-md-3{
-		.box{
-			border: 1px solid @color-default;
-			padding: 3rem;
+
+	.col-md-3 {
+		.box {
+			border       : 1px solid @color-default;
+			padding      : 3rem;
 			margin-bottom: 2rem;
-			.label{
-				display: block;
+
+			.label {
+				display   : block;
 				text-align: left;
-				margin: 2rem 0 0.5rem 0;
+				margin    : 2rem 0 0.5rem 0;
 			}
-			.glyphicon{
+
+			.glyphicon {
 				display: none;
 			}
 		}
-		ul{
+
+		ul {
 			list-style: none;
-			padding: 0;
-			margin: 0;
+			padding   : 0;
+			margin    : 0;
 		}
 	}
-	.gallery-photo{
-		.images-preview{
+
+	.gallery-photo {
+		.images-preview {
 			margin-left: 0;
 		}
 	}
+
 	.fancybox-container .fullcaption,
-	.fancybox-thumbs{
-		display: flex;
-		flex-direction: column;
-		width: 370px;
-		padding: 0 2rem;
-		position: absolute;
-		right: 0;
-		top: 0;
-		min-height: 100%;
+	.fancybox-thumbs {
+		display         : flex;
+		flex-direction  : column;
+		width           : 370px;
+		padding         : 0 2rem;
+		position        : absolute;
+		right           : 0;
+		top             : 0;
+		min-height      : 100%;
 		background-color: @color-light;
-		.caption{
-			overflow-y: auto;
-			height: auto;
-			flex: 1;
+
+		.caption {
+			overflow-y : auto;
+			height     : auto;
+			flex       : 1;
 			font-family: 'Open Sans', sans-serif;
 		}
-		ul{
+
+		ul {
 			height: auto !important;
 		}
-		h3{
+
+		h3 {
 			color: @color-default;
 		}
-		label{
-			padding: 1rem 0.5rem 0 0;
-			font-size: 1.4rem;
+
+		label {
+			padding    : 1rem 0.5rem 0 0;
+			font-size  : 1.4rem;
 			white-space: normal;
 		}
 	}
+
 	[id^="fancybox-container-"] .fancybox-inner,
-	.fancybox-show-thumbs .fancybox-inner{
+	.fancybox-show-thumbs .fancybox-inner {
 		right: 370px;
 	}
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
+
 	body.template-facetednavigation_view #faceted-top-column fieldset form,
 	body.template-facetednavigation_view .eea-preview-items .faceted-casestudies a .items-content,
-	body.template-facetednavigation_view .eea-preview-items .faceted-professional a .items-content{
+	body.template-facetednavigation_view .eea-preview-items .faceted-professional a .items-content {
 		flex-direction: column;
-		input[type="submit"]{
+
+		input[type="submit"] {
 			margin: 0.5rem 0;
+		}
+	}
+
+	.portaltype-professional .fancybox-container,
+	.portaltype-professional .fancybox-container .fancybox-show-thumbs {
+		display        : flex;
+		flex-direction : column;
+		justify-content: space-between;
+		align-items    : center;
+
+		.fancybox-inner {
+			right         : 0;
+			display       : flex;
+			flex-direction: column;
+			position      : relative;
+			width         : 100%;
+			height        : auto;
+			flex          : 1;
+
+			.fancybox-stage {
+				.fancybox-slide {
+					margin : 0;
+					padding: 4.5rem 0.5rem 0.5rem 0.5rem;
+
+					.fancybox-content {
+						transform: none;
+					}
+				}
+			}
+
+			.fancybox-toolbar {
+				opacity   : 1;
+				visibility: visible;
+			}
+
+			.fancybox-caption {
+				display: none;
+			}
+		}
+
+		.fancybox-thumbs,
+		.fullcaption {
+			width     : 100%;
+			min-height: auto;
+			position  : relative;
+			padding   : 0;
+			height    : 70%;
+			padding   : 1rem;
 		}
 	}
 }
