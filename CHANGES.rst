@@ -5,7 +5,8 @@ Changelog
 1.0a16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix url of button professionnals RENOCOPRO-55
+  [AuroreMariscal]
 
 
 1.0a15 (2019-11-19)

@@ -85,6 +85,7 @@
 }
 
 #content-core .buttons-professionnal {
+	display: flex;
 	flex-wrap: wrap;
 
 	a.button-professionnal {
@@ -98,7 +99,8 @@
 		font-size       : 2.4rem;
 		margin-bottom   : 0.5rem;
 
-		&::before {
+		&.search::before,
+		&.register::before {
 			content            : " ";
 			display            : inline-block;
 			margin-right       : 1rem;
@@ -113,13 +115,13 @@
 
 		&.search {
 			&::before {
-				background-image: url(http://localhost:8080/renocopro/professionnels/magnifying-glass-white.png/@@images/1291dc6d-8f15-4553-9c3f-f2e5d4eca489.png);
+				background-image: url(https://reno-copro.liege.be/professionnels/magnifying-glass-white.png/@@images/1291dc6d-8f15-4553-9c3f-f2e5d4eca489.png);
 			}
 		}
 
 		&.register {
 			&::before {
-				background-image: url(http://localhost:8080/renocopro/professionnels/writing-white.png/@@images/36ccc9ab-ca0d-420c-9147-ee3b523c894d.png);
+				background-image: url(https://reno-copro.liege.be/professionnels/writing-white.png/@@images/36ccc9ab-ca0d-420c-9147-ee3b523c894d.png);
 			}
 		}
 	}
