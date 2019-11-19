@@ -1,106 +1,130 @@
-#content-header{
+#content-header {
 	background-color: black;
-	display: flex;
-	justify-content: space-between;
+	display         : flex;
+	justify-content : space-between;
+
 	#portal-logo {
-		display: inline-block;
+		display   : inline-block;
 		box-shadow: 1px 4px 7px #bcbcbc;
-		height: 15rem;
-		width: 15rem;
-		position: absolute;
-		margin: 0 0 0 4rem;
+		height    : 15rem;
+		width     : 15rem;
+		position  : absolute;
+		margin    : 0 0 0 4rem;
 		background: @color-light;
 		text-align: center;
-		z-index: 1;
+		z-index   : 1;
+		top       : 0;
+		left      : 0;
+
 		img {
-			display: inline-block;
-			max-width: 100%;
+			display   : inline-block;
+			max-width : 100%;
 			max-height: 100%;
 			margin-top: 50%;
-			transform: translateY(-50%);
+			transform : translateY(-50%);
 		}
 	}
-	#mainnavigation-wrapper{
-		flex: 1;
+
+	#mainnavigation-wrapper {
+		flex        : 1;
 		padding-left: 20rem;
+		text-align  : right;
+
 		#display_menu_button,
-		#display_menu_label{
+		#display_menu_label {
 			display: none;
 		}
-		#mainnavigation{
+
+		#mainnavigation {
 			height: 100%;
-			ul{
-				padding: 0;
-				margin: 0;
-				height: 100%;
-				display: flex;
-				align-items: center;
+
+			ul {
+				padding        : 0;
+				margin         : 0;
+				height         : 100%;
+				display        : flex;
+				align-items    : center;
 				justify-content: start;
-				li{
+
+				li {
 					display: inline-block;
 				}
 			}
 		}
 	}
-	#search-wrapper{
-		#hidden-search{
+
+	#search-wrapper {
+		#hidden-search {
 			height: 100%;
-			#searchbox{
+
+			#searchbox {
 				height: 100%;
-				#searchGadget_form{
+
+				#searchGadget_form {
 					height: 100%;
-					.LSBox{
-						display: flex;
-						height: 100%;
-						align-items: center;
+
+					.LSBox {
+						display     : flex;
+						height      : 100%;
+						align-items : center;
 						margin-right: 1rem;
-						#searchGadget{
-							height: auto;
+
+						#searchGadget {
+							height : auto;
 							padding: 0.2rem;
 							opacity: 0;
 						}
-						.livesearch-results{
+
+						.livesearch-results {
 							opacity: 0;
 						}
-						.searchSection{
+
+						.searchSection {
 							display: none;
 						}
-						.searchButton{
-							color: transparent;
+
+						.searchButton {
+							color           : transparent;
 							background-color: transparent;
-							width: 3rem;
-							padding: 0;
-							height: 100%;
-							z-index: 2;
-							text-shadow: none;
-							box-shadow: none;
+							width           : 3rem;
+							padding         : 0;
+							height          : 100%;
+							z-index         : 2;
+							text-shadow     : none;
+							box-shadow      : none;
 						}
-						&::after{
-							color: @color-light;
-							content: "\f002";
+
+						&::after {
+							color      : @color-light;
+							content    : "\f002";
 							font-weight: 900;
 							font-family: "Font Awesome 5 Free";
-							z-index: 1;
+							z-index    : 1;
 							margin-left: -2rem;
 						}
 					}
+
 					&:hover,
 					&:focus,
-					&:active{
+					&:active {
+
 						#searchGadget,
-						.livesearch-results{
+						.livesearch-results {
 							opacity: 1;
 						}
 					}
-					.livesearch-results{
-						h4{
+
+					.livesearch-results {
+						h4 {
 							margin: 0;
 						}
-						a{
-							color: @color-dark;
+
+						a {
+							color : @color-dark;
 							margin: 0;
 						}
-						p:empty{
+
+						p:empty {
 							display: none;
 						}
 					}
@@ -108,98 +132,138 @@
 			}
 		}
 	}
-	#portal-anontools{
+
+	#portal-anontools {
 		padding: 0;
-		margin: 0;
-		ul{
-			height: 100%;
+		margin : 0;
+
+		ul {
+			height : 100%;
 			padding: 0;
-			margin: 0;
-			li{
-				height: 100%;
-				margin: 0;
-				display: flex;
+			margin : 0;
+
+			li {
+				height     : 100%;
+				margin     : 0;
+				display    : flex;
 				align-items: center;
 			}
 		}
 	}
-	a{
-		color: @color-light;
+
+	a {
+		color : @color-light;
 		margin: 1.5rem 3rem;
+
 		&:hover,
 		&:focus,
-		&:active{
-			color: @color-default;
+		&:active {
+			color          : @color-default;
 			text-decoration: none;
 		}
 	}
 }
+
 @media (max-width: 1200px) {
-	#content-header{
-		display: block;
-		#portal-logo{
+	#content-header {
+		display    : flex;
+		align-items: center;
+
+		#portal-logo {
 			height: 10rem;
-			width: 10rem;
+			width : 10rem;
 			margin: 0;
+			top   : auto;
 		}
-		#mainnavigation-wrapper{
-			padding-left: 10rem;
+
+		#portal-anontools {
+			margin-left: auto;
+			align-self : start;
+		}
+
+		#mainnavigation-wrapper {
+			padding  : 0;
+			order    : 1;
 			font-size: 2rem;
-			#display_menu_label{
-				padding-right: 1rem;
-				display: flex;
-				color: transparent;
-				font-size: 3rem;
+			flex     : 0;
+			margin   : 0;
+
+			#display_menu_label {
+				display        : inline-flex;
+				color          : transparent;
+				font-size      : 3rem;
 				justify-content: end;
-				margin: 0;
-				&::after{
-					color: @color-light;
-					cursor: pointer;
-					content: "\f0c9";
+				margin         : 0;
+				width          : 3rem;
+				height         : 3rem;
+				overflow       : hidden;
+				padding        : 0;
+				position       : relative;
+				text-align     : right;
+				margin         : 1rem;
+
+				&::after {
+					color      : @color-light;
+					cursor     : pointer;
+					content    : "\f0c9";
 					font-weight: 900;
 					font-family: "Font Awesome 5 Free";
+					position   : absolute;
+					top        : 50%;
+					left       : 50%;
+					transform  : translate(-50%, -50%);
 				}
 			}
-			#mainnavigation{
+
+			#mainnavigation {
 				display: none;
 			}
-			#display_menu_label.checked + #mainnavigation{
+
+			#display_menu_label.checked+#mainnavigation {
 				display: block;
-				ul{
-					width: 100%;
-					display: block;
+
+				ul {
+					width         : 100%;
+					display       : block;
 					padding-bottom: 0.5rem;
-					li{
-						padding: 0.5rem 1rem;
-						width: 100%;
+
+					li {
+						padding   : 0.5rem 1rem;
+						width     : 100%;
 						text-align: center;
-						a{
-							width: 100%;
+
+						a {
+							width  : 100%;
 							display: inline-block;
-							margin: 0;
+							margin : 0;
 						}
 					}
 				}
 			}
 		}
-		#search-wrapper{
-			padding: 0 0 0 11rem;
-			position: absolute;
-			right: 5rem;
-			top: 0.5rem;
+
+		#search-wrapper {
+			padding  : 0 0 0 11rem;
+			position : absolute;
+			right    : 5rem;
+			top      : 0.5rem;
 			font-size: 2.2rem;
+			display  : none;
 		}
 	}
-	#edit-zone a.plone-toolbar-logo{
+
+	#edit-zone a.plone-toolbar-logo {
 		bottom: 0;
 	}
+
 	body #portal-banner #sponsor {
-		height: 5rem;
-		position: relative;
-		text-align: right;
+		height       : 5rem;
+		position     : relative;
+		text-align   : right;
 		margin-bottom: -5rem;
 	}
-	body #portal-banner .container .banner_container .bannerText{
+
+	body #portal-banner .container .banner_container .bannerText {
 		display: none;
 	}
 }

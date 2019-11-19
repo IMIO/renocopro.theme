@@ -52,8 +52,8 @@ $(document).ready(function() {
       slideshow: true,
       itemWidth: 210,
       itemMargin: 0,
-      minItems: getGridSize(limit),
-      maxItems: getGridSize(limit),
+      minItems: 1,
+      maxItems: 1,
     });
   });
   $('.gallery-photo, .flexslider-tile').each(function(){

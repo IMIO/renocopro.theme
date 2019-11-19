@@ -5,6 +5,9 @@ Changelog
 1.0a15 (unreleased)
 -------------------
 
+- Fix slider for safari RENOCOPRO-46
+  [AuroreMariscal]
+
 - Adapt style of faceted view RENOCOPRO-47
   [amariscal]
 
