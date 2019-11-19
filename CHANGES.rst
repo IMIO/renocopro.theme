@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a15 (unreleased)
+1.0a15 (2019-11-19)
 -------------------
 
 - Fix responsive RENOCOPRO-55
