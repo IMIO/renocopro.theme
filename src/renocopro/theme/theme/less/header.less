@@ -179,11 +179,17 @@
 			width : 10rem;
 			margin: 0;
 			top   : 0;
+			z-index: 3;
 		}
 
 		#portal-anontools {
 			margin-left: auto;
 			align-self : start;
+			li{
+				a{
+					margin: 1.5rem 0.5rem;
+				}
+			}
 		}
 
 		#mainnavigation-wrapper {
@@ -226,6 +232,10 @@
 
 			#display_menu_label.checked+#mainnavigation {
 				display: block;
+				position: absolute;
+				top: 50px;
+				z-index: 2;
+				right: 0;
 
 				ul {
 					width         : 100%;
@@ -233,14 +243,16 @@
 					padding-bottom: 0.5rem;
 
 					li {
-						padding   : 0.5rem 1rem;
+						padding   : 0.5rem 1rem 0.5rem 10rem;
 						width     : 100%;
 						text-align: center;
+						background-color: @color-dark;
 
 						a {
 							width  : 100%;
 							display: inline-block;
 							margin : 0;
+							font-size: 1.5rem;
 						}
 					}
 				}

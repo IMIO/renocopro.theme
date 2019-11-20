@@ -1,4 +1,5 @@
-body.portaltype-event{
+body.portaltype-event,
+body.portaltype-news-item{
 	#content{
 		& > header{
 			display: grid;
@@ -56,6 +57,7 @@ body.portaltype-event{
 	}
 }
 @media (max-width: 768px) {
+	body.portaltype-news-item #content > header,
 	body.portaltype-event #content > header{
 		display: flex;
 		flex-direction: column;
@@ -73,6 +75,7 @@ body.portaltype-event{
 			margin: 0;
 		}
 	}
+	body.portaltype-news-item #content > header,
 	body.portaltype-event #content #content-core{
 		& > div.event{
 			flex-direction: column;

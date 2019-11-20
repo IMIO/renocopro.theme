@@ -1,106 +1,144 @@
-#portal-breadcrumbs{
-	clear: both;
+#portal-breadcrumbs {
+	clear           : both;
 	background-color: transparent;
-	margin: 1.5em 0 0.5em 0;
-	ol > li + li{
-		&:before{
+	margin          : 1.5em 0 0.5em 0;
+
+	ol>li+li {
+		line-height: 1.5;
+
+		&:before {
 			display: none;
 		}
+
 		&:after {
-			content: "\f054";
-			position: absolute;
-			padding: 0 5px;
-			color: @color-default;
-			left: -21px;
-			top: 0;
-			padding: 0 !important;
+			content    : "\f054";
+			position   : absolute;
+			padding    : 0 5px;
+			color      : @color-default;
+			left       : -21px;
+			top        : 0;
+			padding    : 0 !important;
 			font-weight: 900;
 			font-family: "Font Awesome 5 Free";
-			border: none;
+			border     : none;
 		}
 	}
-	a{
-		color: @color-dark;
+
+	a {
+		color          : @color-dark;
 		text-decoration: underline;
 	}
 }
-#portal-banner{
-	min-height: 15rem;
-	margin-top: 0;
+
+#portal-banner {
+	min-height   : 15rem;
+	margin-top   : 0;
 	margin-bottom: 0;
-	padding: 0;
-	position: relative;
-	.container{
-		width: 100%;
+	padding      : 0;
+	position     : relative;
+
+	.banner-slider {
+		margin-bottom: 5rem;
+	}
+
+	.container {
+		width  : 100%;
 		padding: 0;
-		.banner_container{
-			position: relative;
-			height: 100%;
-			display: block;
-			width: 100%;
+
+		.banner_container {
+			position      : relative;
+			height        : 100%;
+			display       : block;
+			width         : 100%;
 			padding-bottom: 30%;
-			&.banner_without_image{
-				background-image: url(++theme++renocopro.theme/images/liege.jpg);
+
+			&.banner_without_image {
+				background-image   : url(++theme++renocopro.theme/images/liege.jpg);
 				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
+				background-repeat  : no-repeat;
+				background-size    : cover;
 			}
-			.bannerImage{
-				img{
-					position: absolute;
-					min-width: 100%;
+
+			.bannerImage {
+				img {
+					position  : absolute;
+					min-width : 100%;
 					min-height: 100%;
 					object-fit: cover;
 				}
 			}
-			.bannerText{
-				position: absolute;
-				text-align: center;
-				font-weight: 900;
-				transform: translate(-50%, -50%);
-				left: 40%;
-				top: 50%;
-				width: auto;
-				display: flex;
+
+			.bannerText {
+				position      : absolute;
+				text-align    : center;
+				font-weight   : 900;
+				transform     : translate(-50%, -50%);
+				left          : 40%;
+				top           : 50%;
+				width         : auto;
+				display       : flex;
 				flex-direction: column;
-				align-items: start;
+				align-items   : start;
+
 				.bannerTitle,
 				.bannerDescription,
-				.bannerBody{
-					padding: 1rem;
+				.bannerBody {
+					padding         : 1rem;
 					background-color: rgba(0, 0, 0, 0.5);
-					color: @color-light !important;
-					margin: 0 0 1rem 0;
+					color           : @color-light  !important;
+					margin          : 0 0 1rem 0;
 				}
-				.bannerTitle{
-					font-size: 3rem;
+
+				.bannerTitle {
+					font-size  : 3rem;
 					font-weight: 900;
 				}
+
 				.bannerDescription,
 				.bannerBody,
-				p{
+				p {
 					font-size: 1.5rem;
 				}
 			}
 		}
 	}
-	#sponsor{
-		height: 10rem;
-		right: 0;
-		display: block;
-		position: absolute;
-		top: 40%;
-		transform: translateY(-50%);
+
+	#sponsor {
+		height          : 10rem;
+		right           : 0;
+		display         : block;
+		position        : absolute;
+		top             : 40%;
+		transform       : translateY(-50%);
 		background-color: @color-light;
-		a{
-			height: 100%;
+
+		a {
+			height : 100%;
 			display: inline-block;
 		}
-		img{
+
+		img {
 			height: 100%;
-			width: auto;
-			.wallonie{
+			width : auto;
+
+			.wallonie {
 				padding: 0.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	body #portal-banner .banner-slider ul.slides li {
+		
+
+		.bannerText {
+			align-items: stretch;
+			padding  : 1rem;
+			.bannerTitle,
+			.bannerDescription{
+				margin: 0.5rem 0;
+				width: 100%;
 			}
 		}
 	}

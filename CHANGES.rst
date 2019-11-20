@@ -5,7 +5,7 @@ Changelog
 1.0a16 (unreleased)
 -------------------
 
-- Fix url of button professionnals RENOCOPRO-55
+- Fix responsive RENOCOPRO-55
   [AuroreMariscal]
 
 
