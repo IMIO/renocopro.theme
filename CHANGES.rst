@@ -5,7 +5,8 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix form ordered-selection-field RENOCOPRO-71
+  [AuroreMariscal]
 
 
 1.0a16 (2019-11-20)
