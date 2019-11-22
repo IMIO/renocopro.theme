@@ -5,6 +5,9 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
+- Add margin bottom to map in professionnal view RENOCOPRO-52
+  [AuroreMariscal]
+
 - Fix form ordered-selection-field RENOCOPRO-71
   [AuroreMariscal]
 
