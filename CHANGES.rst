@@ -5,6 +5,9 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
+- Move map in event view RENOCOPRO-72
+  [AuroreMariscal]
+
 - Add portal-membertools-wrapper to header RENOCOPRO-74
   [AuroreMariscal]
 
