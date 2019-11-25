@@ -57,6 +57,8 @@
   </replace>
   <replace css:content="#portal-anontools" css:theme="#portal-anontools" />
 
+  <replace css:content="#portal-membertools-wrapper" css:theme="#portal-membertools-wrapper" />
+
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
 
   <!-- Central column -->

@@ -5,6 +5,9 @@ Changelog
 1.0a17 (unreleased)
 -------------------
 
+- Add portal-membertools-wrapper to header RENOCOPRO-74
+  [AuroreMariscal]
+
 - Add margin bottom to map in professionnal view RENOCOPRO-52
   [AuroreMariscal]
 
