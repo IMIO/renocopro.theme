@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a17 (unreleased)
+1.0a17 (2019-11-28)
 -------------------
 
 - Move map in event view RENOCOPRO-72
