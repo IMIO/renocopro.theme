@@ -5,7 +5,8 @@ Changelog
 1.0a18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Remove empty preview in transfert RENOCOPRO-75
+  [AuroreMariscal]
 
 
 1.0a17 (2019-11-28)
