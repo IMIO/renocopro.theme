@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a18 (unreleased)
+1.0a18 (2020-02-03)
 -------------------
 
 - Adapt style of edit button on professionnal view RENOCOPRO-83
