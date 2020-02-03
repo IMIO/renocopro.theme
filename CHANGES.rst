@@ -5,6 +5,9 @@ Changelog
 1.0a18 (unreleased)
 -------------------
 
+- Adapt style of edit button on professionnal view RENOCOPRO-83
+  [AuroreMariscal]
+
 - Remove empty preview in transfert RENOCOPRO-75
   [AuroreMariscal]
 
